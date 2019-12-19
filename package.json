@@ -31,24 +31,13 @@
     "build:loose": "rollup -c acorn-loose/rollup.config.js",
     "build:bin": "rollup -c acorn/rollup.config.bin.js",
     "lint": "eslint acorn/src/ acorn-walk/src/ acorn-loose/src/",
-    "learn:test": "ava",
-    "learn:debuggermain": "rollup -m -w -c acorn/rollup.config.debugger.js"
-  },
-  "ava": {
-    "files": [
-      "learn-tests/**/*.__test__.js"
-    ],
-    "verbose": true,
-    "require": [
-      "@babel/register"
-    ]
+    "build:debugger": "rollup -m -w -c acorn/rollup.config.debugger.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.7",
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
     "@babel/register": "^7.7.7",
-    "ava": "^2.4.0",
     "eslint": "^4.10.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "^2.2.0",
